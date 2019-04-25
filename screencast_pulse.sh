@@ -19,7 +19,6 @@ fi
 #pactl list sources; or
 #pactl list sources | grep Name | awk '{print $2}'; for only the names
 
-
 ffmpeg -y \
 -f x11grab \
 -s $(xdpyinfo | grep dimensions | awk '{print $2;}') \
