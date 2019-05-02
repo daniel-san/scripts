@@ -1,0 +1,5 @@
+#/bin/bash
+# Script to select a file from the current directory using dmenu and opening 
+# it with gvim
+
+fullpath | dmenu -l 30 | xargs -I {} gvim {}
